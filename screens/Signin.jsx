@@ -6,7 +6,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Feather from 'react-native-vector-icons/Feather'
 import GlobalStyle from '../styles/GlobalStyle'
 
-export default class Signin extends React.Component {
+export default class Signin extends React.Component
+{
 
 	state = {
 		secureTextEntry: true,
@@ -34,6 +35,7 @@ export default class Signin extends React.Component {
 		}
 		// Login logic
 		// Navigate to main page
+		this.props.allowLogin()
 	}
 
 	render() {

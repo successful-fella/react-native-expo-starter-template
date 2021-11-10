@@ -38,7 +38,7 @@ export default class Main extends React.Component
                 <NavigationContainer>
                     { this.state.login ? (
                         <Drawer.Navigator initialRouteName="MainTabs" drawerContent={props => <DrawerContent {...props} signout={ this.signout } />}>
-                            <Drawer.Screen name="MainTabs"  component={MainTabs} options={{ title:"Home", headerStyle:{ backgroundColor: GlobalConstants.navColor }, headerTitleStyle: { color: '#fff' } }} />
+                            <Drawer.Screen name="MainTabs"  component={MainTabs} options={{ title:"Home", headerStyle:{ backgroundColor: GlobalConstants.navColor }, headerTintColor: '#fff' }} />
                             <Drawer.Screen name="Settings" component={Settings} />
                         </Drawer.Navigator>
                     ) : (

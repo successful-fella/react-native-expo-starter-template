@@ -4,6 +4,8 @@ import GlobalConstants from '../constants/GlobalConstants'
 
 // Screens
 import Home from './Home'
+import Appointments from './Appointments'
+import Services from './Services'
 import Invoices from './Invoices'
 
 // Navigator
@@ -15,8 +17,8 @@ export default class MainTabs extends React.Component
 
 	render() {
         let Tab = createMaterialBottomTabNavigator()
-		return (
-			<Tab.Navigator initialRouteName="Home" activeColor="#fff" shifting={true}>
+					return (
+						<Tab.Navigator initialRouteName="Home" activeColor="#fff" shifting={true}>
 
                 <Tab.Screen
                     name="Home"
@@ -24,23 +26,43 @@ export default class MainTabs extends React.Component
                     options={{
                         tabBarLabel: 'Home',
                         tabBarColor: GlobalConstants.navColor,
-                        tabBarIcon: ({ color }) => <Icon name="ios-home" color={ color } size={26} />
+                        tabBarIcon: ({ color }) => <Icon name="ios-home" color={ color } size={20} />
                     }}
                 />
 
                 <Tab.Screen
+                    name="Appointments"
+                    component={Appointments}
+                    options={{
+                        tabBarLabel: 'Appointments',
+                        tabBarColor: GlobalConstants.navColor,
+                        tabBarIcon: ({ color }) => <Icon name="ios-today" color={ color } size={20} />
+                    }}
+                />
+
+								<Tab.Screen
+                    name="Services"
+                    component={Services}
+                    options={{
+                        tabBarLabel: 'Services',
+                        tabBarColor: GlobalConstants.navColor,
+                        tabBarIcon: ({ color }) => <Icon name="ios-reader" color={ color } size={20} />
+                    }}
+                />
+
+								<Tab.Screen
                     name="Invoices"
                     component={Invoices}
                     options={{
                         tabBarLabel: 'Invoices',
                         tabBarColor: GlobalConstants.navColor,
-                        tabBarIcon: ({ color }) => <Icon name="ios-person" color={ color } size={26} />
+                        tabBarIcon: ({ color }) => <Icon name="ios-receipt" color={ color } size={20} />
                     }}
                 />
 
             </Tab.Navigator>
-		)
-	}
+					)
+		}
 }
 
 

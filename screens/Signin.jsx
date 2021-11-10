@@ -42,7 +42,7 @@ export default class Signin extends React.Component
 		return (
 			<View style={GlobalStyle.container}>
 
-				<StatusBar backgroundColor='#009387' barStyle="light-content" />
+				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
 
 				{/* Heading */}
 				<View style={GlobalStyle.header}>
@@ -54,23 +54,20 @@ export default class Signin extends React.Component
 					{/* Username */}
 					<Text style={GlobalStyle.text_footer}>Username</Text>
 					<View style={GlobalStyle.action}>
-						<FontAwesome name="user-o" size={20} />
+					<FontAwesome style={[GlobalStyle.icon]} name="user-o" size={20} />
 						<TextInput
-							placeholder="Your Username"
+							placeholder="Your Email"
 							placeholderTextColor="#666666"
 							style={GlobalStyle.textInput}
 							autoCapitalize="none"
 							onChangeText={(value) => this.setState({ username: value })}
 						/>
-						<Animatable.View animation="bounceIn">
-							<Feather name="check-circle" color="grey" size={20} />
-						</Animatable.View>
 					</View>
 
 					{/* Password */}
 					<Text style={[GlobalStyle.text_footer, { marginTop: 35 }]}>Password</Text>
 					<View style={GlobalStyle.action}>
-						<Feather name="lock" size={20}/>
+						<Feather style={[GlobalStyle.icon]} name="lock" size={20}/>
 						<TextInput
 							placeholder="Your Password"
 							placeholderTextColor="#666666"
@@ -97,7 +94,7 @@ export default class Signin extends React.Component
 					{/* Signin Button */}
 					<View style={GlobalStyle.button}>
 						<TouchableOpacity style={GlobalStyle.signIn} onPress={() => { this.handleLogin() }} >
-							<LinearGradient colors={['#08d4c4', '#01ab9d']} style={GlobalStyle.signIn} >
+							<LinearGradient colors={['#79429c', '#79429c']} style={GlobalStyle.signIn} >
 								<Text style={GlobalStyle.textSign}>Sign In</Text>
 							</LinearGradient>
 						</TouchableOpacity>

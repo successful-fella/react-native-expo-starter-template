@@ -10,11 +10,11 @@ export default class Invoices extends React.Component
 {
 	render() {
 		return (
-			<View style={GlobalStyle.container}>
+			<View>
 
-				<StatusBar backgroundColor='#009387' barStyle="light-content" />
+				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
                 <Text>Invoices</Text>
-                
+
 			</View>
 		)
 	}

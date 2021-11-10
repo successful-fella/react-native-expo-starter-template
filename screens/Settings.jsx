@@ -12,9 +12,9 @@ export default class Settings extends React.Component
 		return (
 			<View style={GlobalStyle.container}>
 
-				<StatusBar backgroundColor='#009387' barStyle="light-content" />
+				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
                 <Text>Settings</Text>
-                
+
 			</View>
 		)
 	}

@@ -20,14 +20,18 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 20,
 		paddingVertical: 30
 	},
+	icon: {
+		marginTop: 6,
+		color: '#452f53'
+	},
 	text_header: {
 		color: '#fff',
 		fontWeight: 'bold',
 		fontSize: 30
 	},
 	text_footer: {
-		color: '#05375a',
-		fontSize: 18
+		color: '#452f53',
+		fontSize: 16
 	},
 	action: {
 		flexDirection: 'row',
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
 	},
 	textInput: {
 		flex: 1,
-		marginTop: Platform.OS === 'ios' ? 0 : -12,
+		marginTop: Platform.OS === 'ios' ? 6 : 2,
 		paddingLeft: 10,
 		color: '#05375a',
 	},
@@ -62,11 +66,11 @@ const styles = StyleSheet.create({
 		height: 50,
 		justifyContent: 'center',
 		alignItems: 'center',
-		borderRadius: 10
+		borderRadius: Platform.OS === 'ios' ? 25 : 100,
 	},
 	textSign: {
 		fontSize: 18,
-		fontWeight: 'bold',
+		fontWeight: 'normal',
         color: '#fff'
 	}
 })

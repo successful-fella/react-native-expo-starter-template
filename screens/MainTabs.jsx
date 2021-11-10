@@ -12,7 +12,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 
 export default class MainTabs extends React.Component
 {
-    
+
 	render() {
         let Tab = createMaterialBottomTabNavigator()
 		return (

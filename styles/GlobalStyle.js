@@ -1,9 +1,10 @@
 import { Platform, StyleSheet } from 'react-native'
+import GlobalConstants from '../constants/GlobalConstants'
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#009387'
+		backgroundColor: GlobalConstants.backgroundColor
 	},
 	header: {
 		flex: 1,

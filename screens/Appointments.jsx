@@ -13,7 +13,7 @@ export default class Appointments extends React.Component
 			<View>
 
 				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
-                <Text>Appointments</Text>
+                <Text style={ GlobalStyle.textHeading }>Appointments</Text>
 
 			</View>
 		)

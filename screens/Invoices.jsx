@@ -13,7 +13,7 @@ export default class Invoices extends React.Component
 			<View>
 
 				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
-                <Text>Invoices</Text>
+                <Text style={ GlobalStyle.textHeading }>Invoices</Text>
 
 			</View>
 		)

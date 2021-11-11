@@ -72,6 +72,11 @@ const styles = StyleSheet.create({
 		fontSize: 18,
 		fontWeight: 'normal',
         color: '#fff'
+	},
+	textHeading: {
+		fontSize: 20,
+		color: '#000',
+		textAlign: 'center'
 	}
 })
 

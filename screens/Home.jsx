@@ -13,7 +13,7 @@ export default class Home extends React.Component
 			<View>
 
 				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
-                <Text>Hello</Text>
+                <Text style={ GlobalStyle.textHeading }>Hello</Text>
 
 			</View>
 		)

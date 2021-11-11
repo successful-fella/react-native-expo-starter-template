@@ -10,10 +10,10 @@ export default class Settings extends React.Component
 {
 	render() {
 		return (
-			<View style={GlobalStyle.container}>
+			<View>
 
 				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
-                <Text>Settings</Text>
+                <Text style={ GlobalStyle.textHeading }>Settings</Text>
 
 			</View>
 		)

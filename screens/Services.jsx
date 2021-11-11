@@ -13,7 +13,7 @@ export default class Services extends React.Component
 			<View>
 
 				<StatusBar backgroundColor='#79429c' barStyle="light-content" />
-                <Text>Services</Text>
+                <Text style={ GlobalStyle.textHeading }>Services</Text>
 
 			</View>
 		)
